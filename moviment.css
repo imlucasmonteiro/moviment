@@ -1,0 +1,63 @@
+main {
+    position: relative;
+    width: 760px;
+    height: 500px;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #999999;
+    background-color: rgb (255, 255, 255);
+    text-align: center;
+    border: 1px solid #000;
+}
+
+#janela1,
+#janela2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 130px;
+}
+
+#janela1 {
+    left: 10px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#janela2 {
+    left: 180px;
+    background-color: red;
+}
+
+#janela1:hover+#janela2 {
+    transition: all 0.5s ease-out;
+    transform: rotate(960deg);
+    left: 580px;
+}
+
+.janela {
+    width: 120px;
+    height: 100px;
+    background-color: chartreuse;
+}
+
+.janela:hover {
+    transition: all 0.5s ease-out;
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+.btn {
+    margin-left: 500px;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    text-align: center  ;
+}
+
+.btn:hover {
+    transition: all 0.5s ease-out;
+    transform: scale(1.2);
+    background-color: rgb(255, 140, 0);
+}
